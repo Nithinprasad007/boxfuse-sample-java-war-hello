@@ -1,5 +1,9 @@
 pipeline{
-   agent prod
+   agent {
+        node {
+            label 'prod'
+        }
+    }
 
    tools {
      maven 'mvn'
